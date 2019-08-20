@@ -8,8 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //////////////////////////    Routers
-require("./routesHTML")(app);
-require("./routesAPI")(app);
+require("./routes/routesAPI")(app);
+require("./routes/routehtml")(app);
+
 
 // Starts the server to begin listening
 // =============================================================

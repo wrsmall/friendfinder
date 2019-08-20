@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -20,271 +21,281 @@
             <div class="col-lg-8 d-flex justify-content-center">
                 <div class="jumbotron bg-secondary mt-5 w-75 ">
                     <div class="col text-center ">
+                        <div class="form-group text-light mb-0 main-font h4">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" id="mem_name">
+                        </div>
+
+                        <div class="form-group text-light mb-0 main-font h4 mt-2 mb-2">
+                            <label for="">image</label>
+                            <input type="text" class="form-control" id="mem_img">
+                        </div>
                         <p class="text-light mb-0 main-font h4">1.) You believe being outside is better than being in?
                         </p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="outSideOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="outSideOptions" class="outSideOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="outSideOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="outSideOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="outSideOptions" class="outSideOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="outSideOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="outSideOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="outSideOptions" class="outSideOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="outSideOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="outSideOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="outSideOptions" class="outSideOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="outSideOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="outSideOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="outSideOptions" class="outSideOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="outSideOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">2.) You enjoy traveling and seeing different cultures?
                         </p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="travelOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="travelOptions" class="travelOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="travelOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="travelOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="travelOptions" class="travelOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="travelOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="travelOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="travelOptions" class="travelOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="travelOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="travelOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="travelOptions" class="travelOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="travelOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="travelOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="travelOptions" class="travelOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="travelOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">3.) You enjoy craft beer?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beerOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="beerOptions" class="beerOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="beerOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beerOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="beerOptions" class="beerOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="beerOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beerOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="beerOptions" class="beerOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="beerOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="beerOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="beerOptions" class="beerOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="beerOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="beerOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="beerOptions" class="beerOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="beerOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">4.) You would rather listen than speak?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="listenOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="listenOptions" class="listenOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="listenOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="listenOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="listenOptions" class="listenOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="listenOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="listenOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="listenOptions" class="listenOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="listenOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="listenOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="listenOptions" class="listenOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="listenOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="listenOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="listenOptions" class="listenOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="listenOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">5.) You enjoy fishing?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="fishingOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="fishingOptions" class="fishingOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="fishingOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="fishingOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="fishingOptions" class="fishingOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="fishingOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="fishingOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="fishingOptions" class="fishingOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="fishingOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="fishingOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="fishingOptions" class="fishingOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="fishingOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="fishingOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="fishingOptions" class="fishingOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="fishingOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">6.) You enjoy continuous learning?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="learnOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="learnOptions" class="learnOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="learnOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="learnOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="learnOptions" class="learnOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="learnOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="learnOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="learnOptions" class="learnOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="learnOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="learnOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="learnOptions" class="learnOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="learnOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="learnOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="learnOptions" class="learnOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="learnOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">7.) A enjoyable long day is better than an awful short
                             day?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="goodBadOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="goodBadOptions" class="goodBadOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="goodBadOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="goodBadOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="goodBadOptions" class="goodBadOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="goodBadOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="goodBadOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="goodBadOptions" class="goodBadOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="goodBadOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="goodBadOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="goodBadOptions" class="goodBadOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="goodBadOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="goodBadOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="goodBadOptions" class="goodBadOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="goodBadOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">8.) You enjoy thinking through problems in order to find
                             a solution?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="thinkOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="thinkOptions" class="thinkOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="thinkOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="thinkOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="thinkOptions" class="thinkOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="thinkOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="thinkOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="thinkOptions" class="thinkOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="thinkOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="thinkOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="thinkOptions" class="thinkOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="thinkOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="thinkOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="thinkOptions" class="thinkOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="thinkOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">9.) Music is a part of your day to day activity?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="musicOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="musicOptions" class="musicOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="musicOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="musicOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="musicOptions" class="musicOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="musicOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="musicOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="musicOptions" class="musicOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="musicOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="musicOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="musicOptions" class="musicOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="musicOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="musicOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="musicOptions" class="musicOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="musicOptions">5</label>
                         </div>
                         <p class="text-light mb-0 main-font h4">10.) Having pets is essential to a happy life?</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="petsOptions" id="inlineRadio1"
+                            <input class="form-check-input" type="radio" name="petsOptions" class="petsOptions"
                                 value="1">
-                            <label class="form-check-label" for="inlineRadio1">1</label>
+                            <label class="form-check-label" for="petsOptions">1</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="petsOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="petsOptions" class="petsOptions"
                                 value="2">
-                            <label class="form-check-label" for="inlineRadio2">2</label>
+                            <label class="form-check-label" for="petsOptions">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="petsOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="petsOptions" class="petsOptions"
                                 value="3">
-                            <label class="form-check-label" for="inlineRadio2">3</label>
+                            <label class="form-check-label" for="petsOptions">3</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="petsOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="petsOptions" class="petsOptions"
                                 value="4">
-                            <label class="form-check-label" for="inlineRadio2">4</label>
+                            <label class="form-check-label" for="petsOptions">4</label>
                         </div>
                         <div class="form-check form-check-inline mb-3">
-                            <input class="form-check-input" type="radio" name="petsOptions" id="inlineRadio2"
+                            <input class="form-check-input" type="radio" name="petsOptions" class="petsOptions"
                                 value="5">
-                            <label class="form-check-label" for="inlineRadio2">5</label>
+                            <label class="form-check-label" for="petsOptions">5</label>
                         </div>
                     </div>
+                    <button type="submit" class="btn btn-primary submit" id="submit-button">Submit</button>
                 </div>
             </div>
             <div class="col-lg-4 text-center">
@@ -292,12 +303,61 @@
                     <p class="mt-1 text-light h3">Instructions</p>
                     <hr>
                     <hr>
-                    <p class="mt-1 text-light h3">Please answer the adjacent questions based off how much you agree 
-                        with each statement with 1 being stronly disagree and 5 being strongly agree.</p>
+                    <p class="mt-1 text-light h3">Please answer the adjacent questions based off how much you agree
+                        with each statement with 1 being strongly disagree and 5 being strongly agree.</p>
                     </p>
+            
                 </div>
+                <div class="row text-center">
+                    <div class="jumbotron bg-secondary mt-5 p-4 main-font w-75 text-center">
+                        <div class="main-font text-light h2">Best Match</div>
+                        <div id="bestMatch" class="h3 main-font text-light"></div>
+                        <div id="image"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+          <p><a href="/api/tables">API Table Link</a>
+          </p>
+          </div>
+    <script type="text/javascript">
+        $("#submit-button").on("click", function (event, value) {
+            let values = [];
+
+            // Question: What does this code do?
+            let names = ["outSideOptions", "travelOptions", "beerOptions", "listenOptions", "fishingOptions", "learnOptions", "goodBadOptions", "thinkOptions", "musicOptions", "petsOptions"];
+            for (let name of names) {
+                console.log("0..." + name);
+                let formname = `.form-check-input[name=${name}]:checked`;
+                console.log(formname);
+                let value = $(formname).val();
+                console.log("2..." + value);
+                values.push(value);
+
+            }
+
+            event.preventDefault();
+            var newmem = {
+                name: $("#mem_name").val().trim(),
+                image: $("#mem_img").val().trim(),
+                value: values,
+                //[$(".form-check-input[name=outSideOptions]:checked").val(), $(".travelOptions").val(), $(".beerOptions").val(), $(".listenOptions").val(), $(".fishingOptions").val(), $(".learnOptions").val(), $(".goodBadOptions").val(), $(".thinkOptions").val(), $(".musicOptions").val(), $(".petsOption").val()],
+
+            };
+            console.log(newmem);
+
+            $.post("/api/member", newmem)
+                .then(function (data) {
+                    console.log("reserve.html", data);
+                     $("#bestMatch").html(data.matchName);
+                     $("#image").html(`<img src="${data.matchImage}" width="150px" height="150px">`);
+                    });
+        })
+   
+    </script>
 
 </html>

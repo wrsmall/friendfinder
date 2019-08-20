@@ -1,0 +1,26 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "In this activity, I built a compatibility-based \"FriendFinder\" application -- basically a dating app. This full-stack site takes in results from your users' surveys, then compares their answers with those from other users. The app then displays the name and picture of the user with the best overall match.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wrsmall/friendfinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wrsmall/friendfinder/issues"
+  },
+  "homepage": "https://github.com/wrsmall/friendfinder#readme",
+  "dependencies": {
+    "app": "^0.1.0",
+    "express": "^4.17.1",
+    "modules": "^0.4.0",
+    "path": "^0.12.7"
+  }
+}
