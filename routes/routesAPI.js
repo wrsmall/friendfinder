@@ -15,7 +15,7 @@ module.exports = function (app) {
 		var matchImage = '';
 		var totalDifference = 50000;
 		for (var i = 0; i < people.length; i++) {
-			var diff = 0;
+			var diff
 			for (var x = 0; x < thisuser.length; j++) {
 				diff += Math.abs(people[i].scores[j] - thisuser[x]);
 			}
