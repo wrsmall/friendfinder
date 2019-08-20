@@ -17,7 +17,7 @@ module.exports = function (app) {
 		for (var i = 0; i < people.length; i++) {
 			var diff=0;
 			for (var x = 0; x < thisuser.length; j++) {
-				diff += Math.abs(people[i].value - thisuser[x]);
+				diff += Math.abs(people[i].value[i] - thisuser[x]);
 			}
 			console.log('diff = ' + diff);
 			if (diff < totalDifference) {
