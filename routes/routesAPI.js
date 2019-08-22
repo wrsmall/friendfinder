@@ -16,16 +16,20 @@ module.exports = function (app) {
 		for (var i = 0; i < people.length; i++) {
 			var diff = 0;
 			for (var x = 0; x < people[i].answers.length; x++) {
-				console.log(people[i].answers[x]);
-				console.log(thisuser.answers[x]);
+				// console.log(people[i].answers[x]);
+				// console.log(thisuser.answers[x]);
 				diff = parseInt(diff) + Math.abs(parseInt(people[i].answers[x]) - parseInt(thisuser.answers[x]));
-				console.log('diff ' + diff);
+				console.log('loop 1 diff ' + diff);
 			}
-			console.log('diff = ' + diff);
+			console.log('loop 1 diff (2) = ' + diff);
 			people[i].val =parseInt(diff);
-			alldiff.push(diff);
+			alldiff.push(parseInt(diff));
+			console.log(alldiff);
 		}
-		var lowdiff = Math.min(alldiff);
+		console.log('alldiff = ' + alldiff);
+		var lowdiff = Math.min(...alldiff);
+		console.log(typeof(lowdiff));
+		console.log(`low diff=${lowdiff}`);
 		for (let j = 0; j < people.length; j++) {
 			if (lowdiff === people[j].val) {
 
